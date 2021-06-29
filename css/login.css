@@ -1,0 +1,27 @@
+.container{
+    text-align: center;
+}
+
+.container input{
+    padding: 8px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    width: 30%;
+    outline: none;
+}
+
+.container button{
+    background-color: tomato;
+    border-radius: 10px;
+    color: white;
+    border: 0.5px solid tomato;
+    box-shadow: 0px 1px 2px gainsboro;
+    cursor: pointer;
+    padding : 10px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#label-text{
+    color: tomato;
+}

@@ -1,0 +1,93 @@
+/* start global  file*/
+body{
+    margin: 0;
+    /* padding: 0; */
+    font-family: "Amazon Ember", Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+}
+/* end global */
+.navigation{
+    list-style-type: none;
+    background-color: tomato;
+    margin: 0;
+    padding: 0;
+    /* for part 3*/
+    display: flex;
+    justify-content: space-between; 
+    /*login/logout ............... home high score*/
+     /* flex-direction: row-reverse; */
+     /* links will not get above each other for mobile  */
+     /* flex-wrap: wrap; */
+}
+/*flex nav*/
+.left{
+    display: flex;
+}
+.navigation .nav-element{
+    padding: 10px;
+}
+
+.nav-element a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+ .nav-element:hover{
+    background-color: white;
+}
+
+.nav-element:hover a{
+   color: tomato;
+}
+
+/* style cups*/
+.cup-images{
+    text-align: center;
+    
+}
+.cup-images img{
+    /* border: 1px solid gainsboro; */
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px gainsboro;
+    width: 15%;
+}
+.cup-images img:hover{
+    border: 2px solid gainsboro;
+    width: 14%;
+}
+/* style cups*/
+
+#page-header{
+    color: tomato;
+    text-align: center;
+}
+
+#restart-game-btn{
+    background-color: tomato;
+    border-radius: 10px;
+    color: white;
+    border: 0.5px solid tomato;
+    box-shadow: 0px 1px 2px gainsboro;
+    cursor: pointer;
+    padding : 10px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button-container{
+    text-align: center;
+}
+
+.score-counter{
+    color: tomato;
+}
+
+#welcome-text{
+    color: white;
+    background-color: tomato;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}

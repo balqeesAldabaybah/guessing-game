@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <ul class="navigation">
+        <div class="left">
+            <li class="nav-element"><a href="index.html">Home</a> </li>
+            <li class="nav-element"><a href="pages/scores.html">high score</a> </li>
+        </div>
+        <div class="right">
+            <li class="nav-element"><a href="pages/loginlogout.html">login/logout</a> </li>
+        </div>
+    </ul>
+    <br>
+    <h1 id="welcome-text"></h1>
+    <h1 id="page-header">Guess under which cup the marble is ?</h1>
+    <br>
+    <div class="cup-images">
+        <img src="images/cup.jpg" class="display-image" id="1" alt="cup1" >
+        <img src="images/cup.jpg" class="display-image" id="2" alt="cup2">
+        <img src="images/cup.jpg" class="display-image" id="3" alt="cup3">
+        <img src="images/cup.jpg" class="display-image" id="4" alt="cup4">
+        <img src="images/cup.jpg" class="display-image" id="5" alt="cup5">
+    </div>
+    <br>
+    <br>
+    <div class="button-container">
+        <button id="restart-game-btn" onclick="resetGame()"> Restart game </button>
+        <br>
+        <br>
+        <div class="score-counter"> 
+            score : <span id="score"> 0</span>
+        </div>
+    </div> 
+    <script src="js/app.js"></script>
+</body>
+
+</html>
