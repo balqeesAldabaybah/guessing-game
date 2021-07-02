@@ -30,7 +30,7 @@ function resetGame() {
     attempGames +=1 ;
     if(attempGames === 6){
         /*  console will be replacd with the backend API */
-        console.log('your score is' , current_score)
+        postToBackend()
         attempGames = 0 ;
         current_score = 0;
         document.getElementById('score').innerHTML = current_score
@@ -45,6 +45,15 @@ function  guessRandom(){
      correct_answer = Math.ceil(Math.random() * 5)
     console.log(correct_answer)
 }
+function postToBackend(){
+    const name = localStorage.getItem('username')
+    if(name){
+        const score = current_score;
+        postScore(name,score)
+    }
+    document.getElementById('result').innerHTML = "your score is " + current_score
+}
+
 // get a random number 
 
 guessRandom()
